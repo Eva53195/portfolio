@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial scale=1.0">
+<title>Your Travel Preferences</title>
+<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <h1 id="title">Your Travel Preferences<br> Survey</h1>
+  <p id="description">We would love to know more about how you travel and what you enjoy most. Please take a moment to complete this short survey</p>
+  <form id="survey-form">
+    <label for="name" id="name-label">Full Name: <input id="name" type="text" placeholder="Enter your name" required/></label>
+    <label for="email" id="email-label">Email Address: <input id="email" type="email" placeholder="example@email.com" required/></label>
+    <label for="number" id="number-label">Your Age: <input id="number" type="number" min="14" max="100" placeholder="Enter your age"/></label><hr>
+    <label for="dropdown">What type of destination do you prefer?
+      <select id="dropdown" name="dropdown">
+        <option value="">Select one</option>
+        <option value="1">Beaches</option>
+        <option value="2">Mountains</option>
+        <option value="3">Cities</option>
+        <option value="4">Countryside</option>
+      </select>
+    </label>
+    <div class="radio-group">
+    <legend>How often do you travel?</legend>
+    <label for="once"><input type="radio" id="once" name="times-travel" value="once-a-year"/> Once a year</label>
+    <label for="2-3-times"><input type="radio" id="2-3-times" name="times-travel" value="2-3-times-a-year"/> 2-3 times a year</label>
+    <label for="more-3"><input type="radio" id="more-3" name="times-travel" value="more-than-3-times-a-year"/> More than 3 times a year</label>
+    </div>
+    <div class="checkbox-group">
+    <p class="activities">What activities do you enjoy while traveling?</p>
+    <label><input name="activities" type="checkbox" value="sightseeing"/> Sightseeing</label>
+    <label><input name="activities" type="checkbox" value="hiking" /> Hiking</label>
+    <label><input name="activities" type="checkbox" value="trying-local-food" /> Trying local food</label>
+    <label><input name="activities" type="checkbox" value="shopping" /> Shopping</label>
+    <label><input name="activities" type="checkbox" value="visiting-museums"/> Visiting museums</label>
+    <label><input name="activities" type="checkbox" value="relaxing-on-the-beach"/> Relaxing on the beach</label>
+    </div>
+    <hr>
+    <div class="memorable-trip">
+    <label>Tell us about your most memorable trip: <textarea id="trip" name="memorable-trip" rows="8" cols="32" placeholder="I went to..."></textarea>
+    </label>
+    <input id="submit" type="submit" value="Submit"/>
+    </div>
+  </form>
+</body>
